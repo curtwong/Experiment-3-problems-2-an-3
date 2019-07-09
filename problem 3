@@ -1,0 +1,26 @@
+#include <iostream>
+
+using namespace std;
+
+char* strrev(char* n)
+{
+char c;
+char* x= n-1;
+char* y= n;
+
+while (*y) ++y;
+while (y-- > ++x)
+{
+c = *x;
+*s0 = *y;
+*y = c;
+}
+return n;
+}
+int main()
+{
+char word[] = "eng1907";
+cout << "Normal= " << word << endl;
+cout << "Backwards= " << strrev(word) << endl;
+return 0;
+}
